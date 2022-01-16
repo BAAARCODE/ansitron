@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8"/>
+
+<link rel="stylesheet"  href="style.css">
+
+<title>ANSItron</title>
+
+<div id="toolbar">
+    <div class="vert">
+        <div>
+            <div class="tool emph" id="bold"><b>B</b></div>
+        </div>
+        <div>
+            <div class="tool emph" id="underline"><u>U</u></div>
+        </div>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="vert">
+        <div class="horiz" id="text-colours">
+            TEXT&nbsp;
+            <div class="tool" id="clear-text-colour"></div>
+        </div>
+        <div class="horiz" id="highlight-colours">
+            HIGHLIGHT&nbsp;
+            <div class="tool" id="clear-highlight"></div>
+        </div>
+    </div>
+</div>
+
+<div id="content" contenteditable="true">
+    I do <u><b>NOT</b> iron</u> my socks!
+</div>
+
+<script src="colours.js"></script>
+<script src="init.js"></script>
+
