@@ -1,5 +1,6 @@
 const defaultTextColour = "#b9bbbe";
 const textColours = [
+    "#b9bbbe",
     "#4f545c",
     "#dc322f",
     "#859900",
@@ -10,6 +11,7 @@ const textColours = [
     "#ffffff"
 ];
 const highlightColours = [
+    "#2f3136",
     "#002b36",
     "#cb4c16",
     "#586e75",

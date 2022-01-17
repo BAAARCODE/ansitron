@@ -7,6 +7,10 @@ function initPalette(parentID, command, colours)
         const colour = colours[i];
         const node = document.createElement("DIV");
         node.style.backgroundColor = colour;
+        if (colour == "#2f3136") // "Default" highlight with low contrast
+        {
+            node.style.boxShadow = "0px 0px 0px 2px #202225 inset";
+        } 
         node.classList.add("tool");
 
         node.onclick = function()

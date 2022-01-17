@@ -56,14 +56,6 @@ html, body {
     padding: 1em;
 }
 
-#clear-text-colour {
-    background-color: #b9bbbe;
-}
-
-#clear-highlight {
-    box-shadow: 0px 0px 0px 2px grey inset;
-}
-
 [contenteditable] {
     outline: 0px solid transparent;
 }
