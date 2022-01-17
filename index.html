@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8"/>
+<meta charset="utf-8">
 
 <link rel="stylesheet"  href="style.css">
 
@@ -9,10 +9,10 @@
 <div id="toolbar">
     <div class="vert">
         <div>
-            <div class="tool emph" id="bold"><b>B</b></div>
+            <div class="tool emph" id="bold" onclick="format('bold');"><b>B</b></div>
         </div>
         <div>
-            <div class="tool emph" id="underline"><u>U</u></div>
+            <div class="tool emph" id="underline" onclick="format('underline');"><u>U</u></div>
         </div>
     </div>
     &nbsp;&nbsp;&nbsp;&nbsp;
@@ -29,9 +29,9 @@
 </div>
 
 <div id="content" contenteditable="true">
-    I do <u><b>NOT</b> iron</u> my socks!
+    I do NOT iron my socks!
 </div>
 
 <script src="colours.js"></script>
 <script src="init.js"></script>
-
+<script src="rte.js"></script>
