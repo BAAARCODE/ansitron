@@ -59,3 +59,7 @@ html, body {
 [contenteditable] {
     outline: 0px solid transparent;
 }
+
+u {
+    text-decoration: underline solid 0.08em;
+}
