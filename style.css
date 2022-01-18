@@ -37,6 +37,12 @@ html, body {
     color: white;
 }
 
+.big-button {
+    font-size: 1.3em;
+    padding: 0.3em;
+    cursor: pointer;
+}
+
 #toolbar {
     display: flex;
     flex-direction: row;
@@ -44,6 +50,7 @@ html, body {
     background-color: #32353b;
     padding: 0.3em;
     user-select: none;
+    align-items: center;
 }
 
 #content {
