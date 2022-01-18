@@ -1,4 +1,5 @@
 const text = document.getElementById("content");
+const copyButton = document.getElementById("copy-ansi");
 
 function format(commandName, commandArgument)
 {
@@ -9,6 +10,10 @@ function format(commandName, commandArgument)
 function exportToClipboard()
 {
     navigator.clipboard.writeText(HTMLtoANSI(text.innerHTML));
+    copyButton.innerHTML = "Copied!";
+    setTimeout(() => {
+        copyButton.innerHTML = "Copy as ANSI";
+    }, 2000);
 }
 
 function HTMLtoANSI(html)
