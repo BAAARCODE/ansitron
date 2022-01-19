@@ -79,3 +79,8 @@ html, body {
 u {
     text-decoration: underline solid 0.08em;
 }
+
+.emph:active, .tool:active {
+    box-shadow: 1em 1em 1em 1em #00000044 inset;
+    background-color: #3b45bb;
+}
