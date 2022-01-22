@@ -19,8 +19,8 @@ function exportToClipboard()
 function HTMLtoANSI(html)
 {
     var text = html;
-    text = text.replace("<div>", "");
-    text = text.replace("</div>", "\n");
+    text = text.replaceAll("<div>", "");
+    text = text.replaceAll("</div>", "\n");
     
     text = text.trim();
 
@@ -97,10 +97,10 @@ function HTMLtoANSI(html)
         text = text.replace(text.substring(leftmostIndex, leftIndex), ANSItag);
     }
 
-    text = text.replace("&nbsp;", " ");
-    text = text.replace("&amp;", "&");
-    text = text.replace("&lt;", "<");
-    text = text.replace("&gt;", ">");
+    text = text.replaceAll("&nbsp;", " ");
+    text = text.replaceAll("&amp;", "&");
+    text = text.replaceAll("&lt;", "<");
+    text = text.replaceAll("&gt;", ">");
 
     text = "```ansi\n" + text + "\n```";
 
