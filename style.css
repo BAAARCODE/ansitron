@@ -18,6 +18,9 @@ html, body {
     height: 1.3em;
     font-size: 1.3em;
     cursor: pointer;
+    border-radius: 4px;
+    filter: brightness(1);
+    transition: filter 0.1s;
 }
 
 .vert {
@@ -35,6 +38,9 @@ html, body {
 .emph {
     background-color: #5865f2;
     color: white;
+    border-radius: 4px;
+    filter: brightness(1);
+    transition: filter 0.1s;
 }
 
 .big-button {
@@ -83,4 +89,7 @@ u {
 .emph:active, .tool:active {
     box-shadow: 1em 1em 1em 1em #00000044 inset;
     background-color: #3b45bb;
+}
+.emph:hover,.tool:hover {
+    filter: brightness(1.1);
 }
